@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class CamelCaseSplitter
 {
+    //Simply splits the camelCase string. Example:
+    //previousIndex => previous, Index
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -15,6 +17,6 @@ public class CamelCaseSplitter
                 previousIndex = i;
             }
 
-        System.out.println(statement.substring(previousIndex).toLowerCase());
+        System.out.println(statement.substring(previousIndex).toLowerCase()); //Last part
     }
 }

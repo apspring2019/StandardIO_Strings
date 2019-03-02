@@ -35,6 +35,6 @@ public class DurationCalculator
         String hour = time.substring(0, colonPosition);
         String min = time.substring(colonPosition + 1);
 
-        return Integer.parseInt(hour) * 60 + Integer.parseInt(min);
+        return Integer.parseInt(hour) * MINUTES_IN_HOUR + Integer.parseInt(min);
     }
 }

@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class FibonacciTester
 {
+    //Simply asks user to input the fibonacci series
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+        //Initialization
         int faultCount = 0;
         int currentNum = 1;
         int previousNum = 1;
@@ -18,12 +20,12 @@ public class FibonacciTester
             while (scanner.nextInt() != nextNum)
             {
                 faultCount++;
-                System.out.println("Please try again!");
                 if (faultCount > 3)
                 {
                     System.out.println("You lose!");
                     break inputLoop;
                 }
+                System.out.println("Please try again!");
             }
             faultCount = 0;
             previousNum = currentNum;
