@@ -10,7 +10,8 @@ public class DurationCalculator
     {
         Scanner scanner = new Scanner(System.in);
         String inputLine;
-        while (!(inputLine = scanner.nextLine()).equalsIgnoreCase("end"))
+        while (scanner.hasNextLine() &&
+                !(inputLine = scanner.nextLine()).equalsIgnoreCase("end"))
         {
             int pointerPosition = inputLine.indexOf("->");
             String start = inputLine.substring(0, pointerPosition);
